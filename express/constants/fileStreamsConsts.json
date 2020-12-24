@@ -1,0 +1,5 @@
+{
+    "project_dir": "./project/server.js",
+    "project_navigate": "cd project && touch server.js",
+    "node_express_server_file": "const express = require('express');\nconst handlebars = require('express-handlebars');\n\nconst app = express();\n\napp.engine('handlebars',handlebars());\napp.set('view engine', 'handlebars');\napp.get('/', (req, res, next) => {\n\n});"
+}

@@ -1,0 +1,4 @@
+{
+    "project_dir": "mkdir project",
+    "yarn_dependancies": "cd project && yarn init -y && yarn add express handlebars express-handlebars webpack mongoose"
+}

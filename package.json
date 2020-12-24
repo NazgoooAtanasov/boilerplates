@@ -1,0 +1,12 @@
+{
+  "name": "boilerplates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "suck": "echo asd"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
