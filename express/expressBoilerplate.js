@@ -14,23 +14,27 @@ const createDir = () => {
             resolve(stdout ? stdout : stderr);
         });
     })
-}
+};
 
-createDir().then(() => {
-    exec(projectConsts.yarn_dependancies, (error, stdout, stderr) => {
-        if (error) {
-            console.log(error);
-        }
-        console.log(stdout);
+const startProcess = () => {
+    createDir().then(() => {
+        exec(projectConsts.yarn_dependancies, (error, stdout, stderr) => {
+            if (error) {
+                console.log(error);
+            }
+            console.log(stdout);
+        });
+    
+        exec(fileStreamConsts.project_navigate, (error, stdout, stderr) => {
+            if (error) {
+                console.log(error);
+            }
+            console.log(stdout);
+        });
+    
+        const stream = fs.createWriteStream(fileStreamConsts.project_dir);
+        stream.write(fileStreamConsts.node_express_server_file);    
     });
+};
 
-    exec(fileStreamConsts.project_navigate, (error, stdout, stderr) => {
-        if (error) {
-            console.log(error);
-        }
-        console.log(stdout);
-    });
-
-    const stream = fs.createWriteStream(fileStreamConsts.project_dir);
-    stream.write(fileStreamConsts.node_express_server_file);    
-});
+module.exports = startProcess;

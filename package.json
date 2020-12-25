@@ -1,12 +1,11 @@
 {
   "name": "boilerplates",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Package for creating express boilerplate",
+  "main": "start.js",
   "scripts": {
-    "suck": "echo asd"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Atanas Atanasov",
+  "license": "MIT"
 }
