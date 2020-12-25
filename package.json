@@ -1,5 +1,5 @@
 {
-  "name": "boilerplates",
+  "name": "nbls",
   "version": "1.0.0",
   "description": "Package for creating express boilerplate",
   "main": "start.js",
